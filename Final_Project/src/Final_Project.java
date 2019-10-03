@@ -62,7 +62,7 @@ public class Final_Project extends PApplet {
 			}
 		}
 		spawnEnemies(counter);
-		for(@SuppressWarnings("rawtypes") HashMap.Entry entry: go.entrySet()) {
+		for(HashMap.Entry entry: go.entrySet()) {
 			GameObject o = (GameObject)entry.getValue();
 			o.render();
 			if( o instanceof Enemy) {
